@@ -1,6 +1,17 @@
-.ipynb_checkpoints/
-__pycache__/
-.DS_Store
+# Data files
+*.csv
 *.zip
 *.tar.gz
+data/
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Python cache & environment
+__pycache__/
+*.py[cod]
 .venv/
+
+# OS specific files
+.DS_Store
+Thumbs.db

@@ -44,6 +44,13 @@ STEPS = [
         'makes': ['svm_test_predictions.csv', 'svm_info.json'],
         'time': 'about 45 min',
     },
+    {
+        'notebook': 'random_forest_model.ipynb',
+        'reads': ['features.csv', 'feature_info.json', 'split_info.csv'],
+        'makes': ['rf_test_predictions.csv', 'rf_info.json'],
+        'time': 'about 1 min',
+    },
+
     # When the random forest notebook is added, give it an entry here the same way.
 ]
 

@@ -1,6 +1,6 @@
 # Electricity theft detection
 
-Group assignment for T5022 Fundamentals of Machine Learning. We use the SGCC (State Grid Corporation of China) electricity consumption dataset to detect customers who steal electricity, and compare two classical supervised learning algorithms on the same task.
+Group assignment for IT5022 Fundamentals of Machine Learning. We use the SGCC (State Grid Corporation of China) electricity consumption dataset to detect customers who steal electricity, and compare two classical supervised learning algorithms on the same task.
 
 Dataset: https://github.com/henryRDlab/ElectricityTheftDetection
 
@@ -18,8 +18,12 @@ notebooks/   the analysis, one notebook per step
 |---|---|---|---|
 | 1 | `data_cleaning_split.ipynb` | `data.csv` | `data_cleaned.csv`, `data_train.csv`, `data_test.csv`, `split_info.csv` |
 | 2 | `features_pca.ipynb` | `data_cleaned.csv`, `split_info.csv` | `features.csv`, `feature_info.json` |
+| 3 | `svm_model.ipynb` | `features.csv`, `feature_info.json`, `split_info.csv` | `svm_test_predictions.csv`, `svm_info.json` |
+| 4 | `random_forest_model.ipynb` | `features.csv`, `feature_info.json`, `split_info.csv` | `rf_test_predictions.csv`, `rf_info.json` |
 
-The model notebooks come after these and read `features.csv`.
+Both models use the same 22 inputs and the same split and folds. so the comparison is unbiased
+
+The first run of the SVM notebook takes about 45 min because of the grid search. After that it takes about 4 min because the results are saved in `results/`
 
 ## How to run
 

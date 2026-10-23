@@ -51,6 +51,13 @@ STEPS = [
         # grid search is 240 fits so it takes a while
         'time': 'about 20 min',
     },
+    {
+        'notebook': 'comparison_tests.ipynb',
+        'reads': ['svm_test_predictions.csv', 'svm_info.json', 'rf_test_predictions.csv', 'rf_info.json',
+                  'features.csv', 'feature_info.json'],
+        'makes': ['comparison_info.json'],
+        'time': 'about 1 min',
+    },
 ]
 
 

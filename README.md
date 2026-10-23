@@ -20,6 +20,7 @@ notebooks/   the analysis, one notebook per step
 | 2 | `features_pca.ipynb` | `data_cleaned.csv`, `split_info.csv` | `features.csv`, `feature_info.json` |
 | 3 | `svm_model.ipynb` | `features.csv`, `feature_info.json`, `split_info.csv` | `svm_test_predictions.csv`, `svm_info.json` |
 | 4 | `random_forest_model.ipynb` | `features.csv`, `feature_info.json`, `split_info.csv` | `rf_test_predictions.csv`, `rf_info.json` |
+| 5 | `comparison_tests.ipynb` | `svm_test_predictions.csv`, `svm_info.json`, `rf_test_predictions.csv`, `rf_info.json`, `features.csv`, `feature_info.json` | `comparison_info.json` |
 
 Both models use the same 22 inputs and the same split and folds. so the comparison is unbiased
 

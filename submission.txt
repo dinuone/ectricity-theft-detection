@@ -1,0 +1,8 @@
+Dataset:
+https://github.com/henryRDlab/ElectricityTheftDetection
+
+GitHub repository:
+https://github.com/dinuone/ectricity-theft-detection
+
+YouTube video:
+[TODO]
